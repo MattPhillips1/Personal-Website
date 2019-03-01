@@ -7,7 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?cs=srgb&dl=adventure-alpine-background-355770.jpg&fm=jpg');
+  background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
