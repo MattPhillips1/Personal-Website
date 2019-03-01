@@ -69,13 +69,17 @@ class EducationPage extends React.Component {
               makeYear(courses['third'])
             }
             <TableHeader start={1} end={4}>
-              <span onClick={this.hideTwo} style={{cursor: 'pointer'}}>Year 2</span>
+              <span onClick={this.hideTwo} style={{cursor: 'pointer'}}>
+                Year 2 <small>{this.state.hideTwo ? '▼' : '▲'}</small>
+              </span>
             </TableHeader>
             {
               this.state.hideTwo ? null : makeYear(courses['second'])
             }
             <TableHeader start={1} end={4}>
-              <span onClick={this.hideOne} style={{cursor: 'pointer'}}>Year 1</span>
+              <span onClick={this.hideOne} style={{cursor: 'pointer'}}>
+                Year 1 <small>{this.state.hideOne ? '▼' : '▲'}</small>
+              </span>
             </TableHeader>
               {
                 this.state.hideOne ? null : makeYear(courses['first'])
