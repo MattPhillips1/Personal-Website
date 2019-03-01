@@ -1,0 +1,26 @@
+.main-navigation ul {
+  margin-left: 0;
+}
+
+.navlink {
+  color: rgba(255,255,255,.6);
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: white
+}
+
+.navlink:hover::after {
+  content: ' › '
+}
+
+.navlink.active {
+  color: white
+}
+.navlink.active::after {
+  content: ' › '
+}
