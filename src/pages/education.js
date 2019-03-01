@@ -27,6 +27,19 @@ const makeYear = (courses) => {
 }
 class EducationPage extends React.Component {
 
+  state = {
+    hideTwo: true,
+    hideOne: true
+  }
+
+  hideOne = () => {
+    this.setState({hideOne: !this.state.hideOne})
+  }
+
+  hideTwo = () => {
+    this.setState({hideTwo: !this.state.hideTwo})
+  }
+
   render() {
     return (
       <Layout>
@@ -37,7 +50,11 @@ class EducationPage extends React.Component {
           title='University'
           message='4th Year Computer Science & Mathematics Student (UNSW) | WAM: 85.75 (HD)'
           />
-          <b>Note:</b> Courses marked <i>McGill</i> were taken on an exchange semester to McGill University Montreal. These courses were on a scale of <b>F</b> to <b>A</b>
+          <b>Note:</b>
+          <br/>
+          Courses marked <i>McGill</i> were taken on an exchange semester to McGill University Montreal. These courses were on a scale of <b>F</b> to <b>A</b>
+          <br/>
+          Courses marked <i>WSC</i> were taken the same semester as I went on the <b>World Solar Challenge</b> and hence was absent for ~4 weeks of the course
           <GridTable cols='1fr 2fr 1fr' gap='10px'>
             <TableHeader start={1} end={4}>
               Year 4
@@ -52,18 +69,19 @@ class EducationPage extends React.Component {
               makeYear(courses['third'])
             }
             <TableHeader start={1} end={4}>
-              Year 2
+              <span onClick={this.hideTwo} style={{cursor: 'pointer'}}>Year 2</span>
             </TableHeader>
             {
-              makeYear(courses['second'])
+              this.state.hideTwo ? null : makeYear(courses['second'])
             }
             <TableHeader start={1} end={4}>
-              Year 1
+              <span onClick={this.hideOne} style={{cursor: 'pointer'}}>Year 1</span>
             </TableHeader>
-            {
-              makeYear(courses['first'])
-            }
+              {
+                this.state.hideOne ? null : makeYear(courses['first'])
+              }
           </GridTable>
+          <br/>
           <SubHeading
           title='Secondary School'
           message='Xavier Catholic College | ATAR: 98.7'
