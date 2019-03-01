@@ -8,9 +8,9 @@ const IndexPage = () => (
   <Layout hideWhenSmall={true}>
     <SEO title='Home' keywords={['gatsby', 'application', 'react']} />
     <Content outerStyle={{background: 'none'}} innerStyle={{background: 'none'}}>
-      <div className='blurb'>
+      <div>
         <h2>Hey, nice to meet you</h2>
-        <p style={{fontSize: '20px'}}>
+        <p className='blurb'>
           I am a 22 year old software engineer currently based in <b>Sydney, Australia</b> and am deciding what to do with my life after I graduate in <b>2020</b>
         </p>
       </div>

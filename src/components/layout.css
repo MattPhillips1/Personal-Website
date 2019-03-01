@@ -661,9 +661,15 @@ main{
   width: 65%;
   margin: 10px auto;
 }
+.blurb{
+  font-size: 20px;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  .blurb{
+    display: none;
   }
 }
 @media only screen and (max-width: 840px) {
