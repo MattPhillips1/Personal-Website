@@ -13,7 +13,7 @@ import SideBar from './sidebar'
 import './layout.css'
 import 'font-awesome/css/font-awesome.min.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, hideWhenSmall }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
     render={() => (
       <>
         <div className='layout'>
-          <SideBar />
+          <SideBar hideWhenSmall={hideWhenSmall} />
           <main style={{color: '#333'}}>{children}</main>
         </div>
       </>
@@ -37,6 +37,10 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  hideWhenSmall: false
 }
 
 export default Layout

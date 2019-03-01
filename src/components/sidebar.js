@@ -4,16 +4,18 @@ import { Link } from 'gatsby'
 import VerticalNav from './verticalnav'
 import Hider from './hider'
 import NavLink from './navlink'
+import FaceImage from './faceimage'
 import resume from '../pdfs/resume.pdf'
 
 
-const SideBar = () => (
+const SideBar = ({hideWhenSmall}) => (
   <div className='sidebar'>
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
+          textAlign: 'center'
       }}
     >
       <Link
@@ -23,6 +25,9 @@ const SideBar = () => (
           textDecoration: 'none',
         }}
       >
+        <div className={hideWhenSmall ? 'bar-header hide' : 'bar-header'}>
+          <FaceImage/>
+        </div>
         <h2 style={{ margin: 0 }}>
             Matthew Phillips
         </h2>

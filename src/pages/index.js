@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import Content from '../components/content'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hideWhenSmall={true}>
     <SEO title='Home' keywords={['gatsby', 'application', 'react']} />
     <Content outerStyle={{background: 'none'}} innerStyle={{background: 'none'}}>
       <div className='blurb'>

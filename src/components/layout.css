@@ -631,8 +631,7 @@ main{
   margin-left: 20%;
 }
 .sidebar{
-  background: #1666e5;
-  opacity: 0.75;
+  background-color: rgb(22,102,229,0.75);
   margin-bottom: 1.45rem;
   width: 20%;
   top: 0;
@@ -657,12 +656,17 @@ main{
   font-size: 26px;
   font-weight: normal;
 }
+.bar-header{
+  max-width: 400px;
+  width: 65%;
+  margin: 10px auto;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 840px) {
   .layout{
     flex-direction: column;
   }
@@ -691,5 +695,11 @@ main{
   }
   main{
     margin-left: unset;
+  }
+  .bar-header{
+    max-width: 150px;
+  }
+  .bar-header.hide{
+    display: none;
   }
 }
