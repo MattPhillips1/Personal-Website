@@ -31,6 +31,7 @@ const SkillsPage = () => (
         <br/>
         <SubHeading title='Technologies'/>
         <GridTable cols='1fr 1fr' gap='10px'>
+          <Skill stars={5} title='Git'/>
           <Skill stars={5} title='Flask'/>
           <Skill stars={4} title='ReactJS'/>
           <Skill stars={4} title='Linux/Command Line'/>
