@@ -7,6 +7,7 @@ import GridTable from '../components/gridtable'
 import TableHeader from '../components/tableheader'
 import CourseResult from '../components/courseresult'
 import Content from '../components/content'
+import MyLink from '../components/mylink'
 
 import {courses} from '../constants'
 
@@ -54,7 +55,7 @@ class EducationPage extends React.Component {
           <br/>
           Courses marked <i>McGill</i> were taken on an exchange semester to McGill University Montreal. These courses were on a scale of <b>F</b> to <b>A</b>
           <br/>
-          Courses marked <i>WSC</i> were taken the same semester as I went on the <b>World Solar Challenge</b> and hence was absent for ~4 weeks of the course
+          Courses marked <i>WSC</i> were taken the same semester as I went on the <MyLink url='https://www.worldsolarchallenge.org/'>World Solar Challenge</MyLink> and hence was absent for ~4 weeks of the course
           <GridTable cols='1fr 2fr 1fr' gap='10px'>
             <TableHeader start={1} end={4}>
               Year 4

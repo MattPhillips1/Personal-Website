@@ -9,6 +9,7 @@ import TableHeader from '../components/tableheader'
 import MyLink from '../components/mylink'
 import UNSWImage from '../components/unswimage'
 import TwoPiImage from '../components/twopiimage'
+import SunswiftImage from '../components/sunswiftimage'
 
 const ExpDate = ({children}) => (
   <span style={{justifySelf: 'center'}}>{children}</span>
@@ -47,11 +48,30 @@ const ExperiencePage = () => (
         <span>Course Admin</span>
         <span>As a course admin of Software Engineering Fundamentals, I was responsible for content development and technical duties. This meant that I was responsible for; setting up automated assignment submissions, preparing the online exam environment and setting up the course infrastructure for the coming semesters.</span>
         <ExpDate>2017 - Now</ExpDate>
+        <TableHeader start={1} end={5}>
+          <MyLink target='_blank' url='https://sunswift.com/'>
+            Sunswift
+          </MyLink>
+        </TableHeader>
+        <span>Electrical Team Lead</span>
+        <span>As team lead, I was in charge of a group of ~15 engineers (1st years - 4th years) designing the elelectrical systems for the new car. This position included making sure that the engineers met deadlines as well as interfacing with other subteams of Sunswift</span>
+        <ExpDate>2016 - 2016</ExpDate>
+        <span style={{gridRow: 'span 3', height: 'fit-content', textAlign: 'center', alignSelf: 'center', maxWidth: '200px'}}>
+          <SunswiftImage/>
+        </span>
+        <span>Mechanical Team Member</span>
+        <span>As a mechanical team member during my first year of university, I was lucky enough to be part of the ~30 students chosen to represent UNSW on the <MyLink url='https://www.worldsolarchallenge.org/'>World Solar Challenge (WSC)</MyLink></span>
+        <ExpDate>2015 - 2016</ExpDate>
+        <span>Strategy Team Member</span>
+        <span>The strategy team developed software to determine our WSC race strategy, dependent on conditions such as weather, road incline and power output from the solar cells. In particular, I wrote programs to parse files for data to pass into the systems developed by the strategy team leads.</span>
+        <ExpDate>2015 - 2015</ExpDate>
       </GridTable>
+      <br/>
       <SubHeading
         title='Part Time'
         message='Non-technical positions'
       />
+      <div>Various customer service roles including a <MyLink url='http://www.zao.co.jp/lang/en/takamiya/'>luxury resort</MyLink> in Japan</div>
     </Content>
   </Layout>
 )

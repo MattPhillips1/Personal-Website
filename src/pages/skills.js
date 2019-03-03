@@ -48,6 +48,7 @@ const SkillsPage = () => (
       <div style={{padding: '10px'}}>
         <GridTable cols='1fr 1fr' gap='10px'>
           <Skill stars={5} title='Teamwork'/>
+          <Skill stars={5} title='Communication'/>
           <Skill stars={4} title='Problem Solving'/>
           <Skill stars={4} title='Leadership'/>
           <Skill stars={3} title='Organisation'/>
