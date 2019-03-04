@@ -40,14 +40,14 @@ const ExperiencePage = () => (
         </TableHeader>
         <span>Application Lead Developer</span>
         <span>I am the lead developer on an application that was used by only COMP1531 in 2018 but is now being used by a 2 second year and a third year software engineering courses (~700 students). I was charged with developing an application that seemlessly integrated git into COMP1531 in a way that students could not avoid in favour of bad version control techniques such as email or messenger applications...</span>
-        <ExpDate>2017 - Now</ExpDate>
+        <ExpDate>2018 - Now</ExpDate>
         <span style={{gridRow: 'span 4', height: 'fit-content', textAlign: 'center', alignSelf: 'center', maxWidth: '200px'}}><UNSWImage/></span>
         <span>Course Tutor</span>
         <span>I have tutored two computer science courses at UNSW. Microprocessors and Interfacing (COMP2121) and Software Engineering Fundamentals (COMP1531). This involves preparing and presenting lessons to approx. 30 students as well as answering any questions students may have about lab work, and marking assignments/exams</span>
-        <ExpDate>2016 - Now</ExpDate>
+        <ExpDate>2017 - Now</ExpDate>
         <span>Course Admin</span>
         <span>As a course admin of Software Engineering Fundamentals, I was responsible for content development and technical duties. This meant that I was responsible for; setting up automated assignment submissions, preparing the online exam environment and setting up the course infrastructure for the coming semesters.</span>
-        <ExpDate>2017 - Now</ExpDate>
+        <ExpDate>2018 - Now</ExpDate>
         <TableHeader start={1} end={5}>
           <MyLink target='_blank' url='https://sunswift.com/'>
             Sunswift
